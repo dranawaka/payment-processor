@@ -1,4 +1,4 @@
-package com.aurelius.tech.paymentrestservice.model;
+package com.aurelius.tech.paymentprocessor.model;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -17,7 +17,7 @@ public class PaymentRequest {
     private String correlationId;
     private int retryCount;
 
-
+    public PaymentRequest() { }
 
     private PaymentRequest(Builder builder) {
         this.eventId = builder.eventId;
